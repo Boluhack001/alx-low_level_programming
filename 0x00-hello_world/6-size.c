@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - A programme that prints a size of various of computer types
+ * main - Entry point
  * Return 0 (Success)
  */
 
