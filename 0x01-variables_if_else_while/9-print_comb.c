@@ -1,21 +1,27 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 /**
- * main - codes that prints all possible combination of single digit numbers
+ * main - Entry point
+ *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int n;
+	int d;
 
-	for (n = 48; n < 58; n++)
+	for (d = '0'; d <= '9'; d++)
 	{
-		putchar(n);
-		if (n != 57)
+		putchar(d);
+		if (d != '9')
 		{
 			putchar(',');
-			putchar('');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
