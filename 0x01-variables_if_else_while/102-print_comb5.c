@@ -1,34 +1,38 @@
 #include <stdio.h>
-#include <stdlib.h>
-
 /**
- * main - Entry point
- *
- * Return: 0 (Success)
+ *main - Entry point
+ *Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int i, j;
+	int tens;
+	int ones;
+	int t;
+	int o;
 
-	for (i = 0; i <= 98; i++)
+	for (tens = '0'; tens <= '9'; tens++)
 	{
-		for (j = 0; j <= 98; j++)
+		for (ones = '0'; ones <= '9'; ones++)
 		{
-			putchar((i / 10) + '0');
-			putchar((i % 10) + '0');
-			putchar(' ');
-			putchar((j / 10) + '0');
-			putchar((j % 10) + '0');
-
-			if (i == 98 && j == 99)
-				continue;
-
-			putchar(',');
-			putchar(' ');
+			for (t = tens; t <= '9'; t++)
+			{
+				for (o = ones + 1; o <= '9'; o++)
+				{
+					putchar(tens);
+					putchar(ones);
+					putchar(' ');
+					putchar(t);
+					putchar(o);
+					if (!((tens == '9' && ones == '8') && (t == '9' && o == '9')))
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+				o = '0';
+			}
 		}
 	}
-
 	putchar('\n');
 
 	return (0);
