@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * main - Entry point
- * int _islower - To determine a lowercase
+ * _islower - Compare two letter
+ * @c: contains value to be compared
  *
  * Return: Always 0 (Success)
  */
