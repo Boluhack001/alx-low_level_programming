@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * jack_bauer - Entry point
  * Description: Functions print every minute in 1 day
