@@ -1,1 +1,1 @@
-File to yest C prgrammes for bugs
+This files contain some Debugging project tadks for alx
