@@ -9,17 +9,29 @@
  */
 int main(void)
 {
-	int = 0, random, checksum;
+	int ascii = 2722, i = 0; j = random;
 
-	srand(time(NULL));
-	checksum = 2772;
-	while (checksum > 122)
+	char [password] = 100;
+
+	time_t t;
+
+	srand((int) time(&t));
+	while (ascii > 126)
 	{
-		random = (rand() % 100);
-		printf("%c", random);
-		checksum -= random;
+		random = rand() % 126;
+		password[i] = random;
+		ascii -= random;
 		i++;
 	}
-	printf("%c", checksum);
+	if (ascii > 0)
+		password[i] = ascii;
+	else
+	{
+		i--
+	}
+	for (j = 0; j <= i; j++)
+	{
+		printf("%c", password[j]);
+	}
 	return (0);
 }
